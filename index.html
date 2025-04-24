@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="IMAGENS/spotify-icon.png">
+    <script src="https://kit.fontawesome.com/9c0b449e7b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+    <nav>
+    <div class="header-nav">
+        <div class="menu">
+            <i class="fa-solid fa-ellipsis" alt="dot_menu" id="ellipsis"></i> 
+            <i class="fa-solid fa-arrow-left" alt="left_arrow" class="arrows" id="left_arrow" title="Voltar" onclick="reload()"></i>
+            <i class="fa-solid fa-arrow-right" alt="right_arrow" class="arrows" id="right_arrow"></i>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-house" title="Início" id="home" class="tooltip"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+            <input type="search" placeholder="O que você quer ouvir?" id="search_bar">
+        </div>
+        <div class="options">
+            <button type="button" title="Faça upgrade para o Premium" id="premium_btn">Ver planos Premium</button>        
+            <i class="fa-solid fa-bell" title="Novidades" id="news"></i>
+            <i class="fa-solid fa-people-group" alt="group_users" id="group_users" title="Atividade de amigos"></i>
+            <span title="Cleberson" id="account">C</span>
+        </div>
+    </div>
+    </nav>
+    </header>
+    <main>
+        <div class="main_div">
+            <div class="ad">
+                <img src="IMAGENS/ad_img.jpg" alt="foto_ad" id="ad_icon" aligh="left">
+                <div class="ad_text">
+                    <br>
+                    <h3>Playlist</h3>
+                    <h1>Sofrimento Simultâneo - Gusttavo Lima 2025 As Melhores (Atualizado)</h1>
+                    <p>Ouça Sofrimento Simultâneo, Proibido Terminar, A Noite, e todos os maiores sucessos do embaixador!</p>
+                    <button type="button" id="play">Play</button>
+                    <button type="button" id="follow">Seguir</button>
+                    <i class="fa-solid fa-ellipsis" alt="dot_menu" id="ad_dot" title="Mais"></i> 
+                </div>
+            </div>
+            <div class="categories">
+                <div class="cat_div" id="cat_all">Tudo</div>
+                <div class="cat_div">Músicas</div>
+                <div class="cat_div">Podcasts</div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="IMAGENS/ad_img.jpg" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play" id="play_icon" >
+                  </div>
+                  <div class="card">
+                    <img src="IMAGENS/ad_img2.jpg" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play" id="play_icon">
+
+                  </div>
+                  <div class="card">
+                    <img src="IMAGENS/ad_img3.jpg" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play" id="play_icon">
+
+                  </div>
+                  <div class="card">
+                    <img src="IMAGENS/ad_img4.jpg" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play" id="play_icon">
+                  </div>
+                  <div class="card">
+                    <img src="IMAGENS/ad_img5.jpg" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play" id="play_icon">
+                  </div>
+                  <div class="card">
+                    <img src="IMAGENS/ad_img6.jpg" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play" id="play_icon">
+                  </div>
+                  <div class="card">
+                    <img src="IMAGENS/ad_img7.jpg" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play" id="play_icon">
+                  </div>
+                  <div class="card">
+                    <img src="IMAGENS/ad_img8.png" alt="Amor em 2010">
+                    <span class="span_card">Amor em 2010</span>
+                    <img src="IMAGENS/play_icon.png" alt="play"id="play_icon">
+                  </div>
+
+                  
+                  <h2 id="made"><a href>Feito para Cleberson</h2></a>
+                  <div class="album_card">
+                    <div class="card_album">
+                        <img src="IMAGENS/ad_img2.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+                    </div>
+                    <div class="card_album">
+                        <img src="IMAGENS/ad_img3.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album">
+                        <img src="IMAGENS/ad_img4.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album">
+                        <img src="IMAGENS/ad_img5.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album">
+                        <img src="IMAGENS/ad_img6.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album" id="last">
+                        <img src="IMAGENS/ad_img7.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                  </div>
+                  <h2 id="made_2"><a href>Melhor de cada artista</h2></a>
+                  <div class="album_card2">
+                    <div class="card_album2">
+                        <img src="IMAGENS/ad_img9.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+                    </div>
+                    <div class="card_album2">
+                        <img src="IMAGENS/ad_img5.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album2">
+                        <img src="IMAGENS/ad_img7.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album2">
+                        <img src="IMAGENS/ad_img6.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album2">
+                        <img src="IMAGENS/ad_img5.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album2" id="last">
+                        <img src="IMAGENS/ad_img4.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <h2 id="made_3"><a href>Estações recomendadas</h2></a>
+                  <div class="album_card3">
+                    <div class="card_album3">
+                        <img src="IMAGENS/ad_img3.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+                    </div>
+                    <div class="card_album3">
+                        <img src="IMAGENS/ad_img2.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album3">
+                        <img src="IMAGENS/ad_img5.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album3">
+                        <img src="IMAGENS/ad_img6.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album3">
+                        <img src="IMAGENS/ad_img7.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+                    <div class="card_album3" id="last">
+                        <img src="IMAGENS/ad_img4.jpg" alt="Amor em 2010">
+                        <span class="span_card_album">Amor em 2010</span>
+                        <img src="IMAGENS/play_icon.png" alt="play" id="play_icon_card">
+
+                    </div>
+            </div>
+        </div>
+    </main>
+    <right_side>
+        <div class="right_sidebar">
+                <div class="right_sidebar_img">
+                </div>
+                <div class="right_img">
+                </div>
+                <h1>Mudando de Assunto - Ao Vivo</h1>
+                <p>Henrique & Juliano</p>
+                <div class="about">
+                    <img src="IMAGENS/ad_img5.jpg" alt="about_img">
+                    <span>Henrique & Juliano</span><br>
+                    <span>15.537.557 Ouvintes mensais</span>
+                </div>
+        </div>
+    </right_side>
+    <left_side>
+        <div class="left_side_bar">
+            <ul id="left_side_icons">
+                    <li><i class="fa-solid fa-bars" id="bars" title="Mostrar Sua Biblioteca"></i></li>
+                    <li><i class="fa-solid fa-plus" id="plus" title="Crie uma playlist, pasta ou Jam"></i></li>
+                    <li><img src="IMAGENS/liked_songs.jpg" alt="liked_songs" id="liked_songs" title="Músicas Curtidas"></li>
+            </ul>
+        </div>
+    </left_side>
+    <footer>
+        <div class="footer_div"></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
